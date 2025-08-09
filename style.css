@@ -1,0 +1,411 @@
+:root {
+    --reddish-black: #170101;
+    --icy-white: #ddebf9;
+    --kinda-eggplant: #371e42;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aliceblue;
+    background-color: var(--reddish-black);
+    box-sizing: border-box;
+}
+
+main {
+    margin-bottom: 3rem;
+}
+
+button , label , input{
+    cursor: pointer;
+}
+
+
+#hero-section {
+    background-image: radial-gradient(white 10%, black 80%);
+    width: 100%;
+    margin: auto;
+    box-shadow: 0px 15px 30px 0px black;
+}
+
+#hero-section img {
+    width: 35%;
+}
+
+#hero-section h1 {
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0.1em;
+    font-size: 7rem;
+    font-family: Verdana;
+    color: black;
+    -webkit-text-stroke: 2px white;
+    text-shadow: 0px 0px 35px rgba(0, 0, 0, 0.2);
+
+}
+
+
+#website-nav {
+    position: sticky;
+    top: 0;
+    padding: 10px 16px;
+    margin: auto;
+    box-shadow: 0 4px 10px 4px black;
+    background-color: var(--kinda-eggplant);
+    width: 50%;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 0.2%;
+    justify-content: space-evenly;
+    z-index: 1;
+}
+
+
+
+
+.pageBTN {
+    background-color: white;
+    font-weight: bold;
+    border: none;
+    padding: 0.7em 2em;
+    margin: 0;
+    font-size: 1em;
+    transition: all 0.3s;
+    width: 32%;
+
+
+}
+
+.pageBTN:hover {
+    background-color: var(--icy-white);
+    transform: scale(1.05);
+}
+
+.pageBTN:active {
+    transform: scale(1.1);
+}
+
+
+
+.page-header {
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: verdana;
+    -webkit-text-stroke: 3px var(--kinda-eggplant);
+    text-shadow: 0 0 25px white;
+}
+
+#website-footer {
+    text-align: center;
+    display: block;
+    line-height: 1.2em;
+    width: 100%;
+}
+
+#website-qr-code {
+    box-shadow: 0 0 25px white;
+    float: none;
+    height: 15rem;
+    width: 15rem;
+}
+
+#eye-anatomy {
+    margin: auto;
+    border-collapse: collapse;
+    border: 3px goldenrod inset;
+    background-color: var(--kinda-eggplant);
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+#eye-anatomy caption {
+    font-size: 2rem;
+}
+
+#eye-anatomy td {
+    border: 3px goldenrod inset;
+    padding: 10px 5px;
+}
+
+#eye-anatomy th {
+    background-color: var(--icy-white);
+    border: 3px goldenrod inset;
+    color: black;
+    font-weight: bold;
+}
+
+#eye-anatomy-image {
+    width: 35%;
+    border: 5px goldenrod inset;
+}
+
+.red {
+    color:red
+}
+.blue {
+    color:blue;
+}
+.green {
+    color:green;
+}
+.color {
+    font-style: italic;
+    -webkit-text-stroke: 0.01em white;
+}
+/* the 2 gray css are added and removed by a button */
+.gray {
+    color:gray;
+}
+.grayscale {
+    filter: grayscale(100%);
+}
+
+#achroma {
+    width: 35%;
+    margin: auto;
+}
+#achroma img{
+    background-color: white;
+    border: inset goldenrod 4px;
+    width: 35vw;
+}
+#achroma-btn{
+    width: 36vw;
+    margin: auto;
+    font-size: 1.7em;
+    font-weight: bold;
+    border-radius: 2px;
+}
+#achroma-btn:hover{
+    border:solid goldenrod ;
+
+    transition: all 0.2s;
+}
+#achroma-btn:active{
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+
+.colorblindness-paragraph {
+    font-size: 1.5em;
+    width: 60%;
+    margin: auto;
+    background-color: var(--kinda-eggplant);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: goldenrod 2px solid;
+}
+
+#website-form {
+    margin: auto;
+    width: 50%;
+    font-size: 1.4rem;
+}
+
+#website-form table {
+    border-collapse: collapse;
+    background-color: var(--kinda-eggplant);
+}
+
+#website-form tr {
+    border: 5px outset goldenrod;
+    height:5em;
+}
+.form-qn {
+    width: 80%;
+}
+.form-ans {
+    width: 20%;
+    padding: 0%;
+}
+.form-ans input {
+    width: 90%;
+    display: inline;
+}
+
+#form-submit {  
+    width: 55%;
+    font-size: 2rem;
+    font-weight: bold;
+    height: 1.3em;
+    border-radius: 5px;
+    border:3px goldenrod inset;
+}
+
+#form-submit:hover{
+    transition: all 0.2s;
+    background-color: var(--icy-white);
+    transform: scale(1.05);
+
+}
+#form-submit:active {
+     border:3px goldenrod outset;
+         transform: scale(1.1);
+}
+
+#toggle-form {
+    display: none;
+}
+
+
+#game-area {
+    position: relative;
+    background-color: white;
+    height: 350px;
+    width: 650px;
+    margin: auto;
+    border:goldenrod solid 4px;
+    border-radius: 5px;
+}
+#watcher {
+    margin:auto;
+    width: 20rem;
+    background-image: url("images/watcher_eye_spritesheet.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    aspect-ratio: 225/103.33; /* orginal image height is 310px */
+    background-color: white;
+    border:goldenrod 2px solid;
+    border-radius: 50%;
+}
+.watcher-open{
+     background-position: 0 2%;
+}
+.watcher-clopen{
+    background-position:0 55%;
+}
+.watcher-close{
+     background-position: 0 100%;
+}
+
+#scoreBox {
+    color: white;
+}
+
+#toggle-game{
+    margin-top: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    border: 3px darkgoldenrod inset;
+    font-size: 2rem;
+    width: 40%;
+}
+#toggle-game:hover{
+    transform: scale(1.05);
+    transition: all 0.2s;
+}
+#toggle-game:active{
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+
+
+.gummy-eye {
+    position:absolute;
+    width: 7em;
+    aspect-ratio: 1/1;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.shrink{
+    opacity: 0;
+}
+
+@keyframes eyeFrames{
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+}
+.anim1{animation: eyeFrames 1s;}
+
+
+
+
+
+
+
+
+
+
+/* layout for mobile */
+@media(max-width:800px) {
+    #website-qr-code {
+        display: none;
+    }
+
+    #website-nav {
+        width: 95%;
+        margin: 0;
+        box-shadow:30px 0 0 0 var(--kinda-eggplant), 0 4px 10px 4px black; /*pad in that space I couldn't fill in with width 100%*/
+    }
+    .pageBTN {
+        height: 5rem;
+        flex-grow: 1;
+        padding: 0;
+    }
+    #eye-anatomy {
+        width: 100%;
+        margin: 30px 0;
+        font-size: 1.5rem;
+    }
+    #eye-anatomy-image {
+        width:80%
+    }
+
+
+    .colorblindness-paragraph {
+        width: 98%;
+        font-size: 1.8rem;
+        line-height: 1.2em;
+    }
+
+
+
+
+    #website-form {
+        width: 100%;
+    }
+    #website-form input {
+        height:2.5em;
+    }
+    #form-submit {
+        width: 97%;
+        height:2.5em;
+    }
+    #form-submit:hover , #form-submit:active {
+        transform: scale(1);
+    }
+    #toggle-form {
+        display: block;
+        margin: auto;
+        width: 90%;
+        font-size: 2rem;
+        font-weight: bold;
+        border: inset goldenrod 3px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        transition: all 0.2s;
+    }
+
+    #hide-form:active {
+        background-color: var(--icy-white);
+        border: outset goldenrod 3px;
+    }
+
+    #game-area {
+        width: 98%;
+        height:45vw;
+    }
+    #toggle-game {
+        height:8vw;
+        width: 98%;
+    }
+
+}

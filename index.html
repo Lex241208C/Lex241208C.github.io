@@ -1,14 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
+    <title>
+        Lex | WEBDEV assignment 2
+    </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lex 241208C</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+
 </head>
+
 <body>
-    <h1>
-        Lex 241208C
-    </h1>
-    <img src="qr-code.svg" style="width:100px;height:100px">
+
+    <header id="website-header">
+        <section id="hero-section">
+            <img src="images/cool_eye.png">
+            <h1>
+                Eye
+            </h1>
+        </section>
+    </header>
+    <main>
+
+        <nav id="website-nav">
+            <button id="page1-btn" class="pageBTN">
+                Anatomy of a human eye
+            </button>
+            <button id="page2-btn" class="pageBTN">
+                How vision works
+            </button>
+            <button id="page3-btn" class="pageBTN">
+                Mini-game
+            </button>
+        </nav>
+
+        <section id="page1" class="page">
+            <header class="page-header">
+                <h1>
+                    Anatomy of a human eye
+                </h1>
+            </header>
+            <table id="eye-anatomy">
+                <caption>
+                    The eye is a sensory organ that allows organisms to perceive visual information.
+                </caption>
+                <tr>
+                    <th>
+                        Part of the eye
+                    </th>
+                    <th>
+                        Description
+                    </th>
+                <tr>
+                    <td> Cornea </td>
+                    <td> It is the transparent front part of the eye. It allows light to enter and makes it focus on the
+                        retina</td>
+                </tr>
+                <tr>
+                    <td> Retina </td>
+                    <td> Located at the back of the eyeball.It converts focused light into electrical impulses then
+                        sends it to the brain via optic nerves.</td>
+                </tr>
+                <tr>
+                    <td> Lens </td>
+                    <td> the clear part of the eye behind the iris that helps to focus light, or an image, onto the
+                        retina. </td>
+                </tr>
+                <tr>
+                    <td> Pupil </td>
+                    <td> The opening in the centre of the iris that lets in light. It is regulated by the iris. </td>
+                </tr>
+                <tr>
+                    <td> Sclera </td>
+                    <td> It is the outer layer of the eye </td>
+                </tr>
+                <tr>
+                    <td> Vitreous </td>
+                    <td> a clear gel that fills the inside of the eye and helps it to retain its shape. </td>
+                </tr>
+                <tr>
+                    <td> Iris </td>
+                    <td> the coloured part of your eye that regulates the amount of light entering. </td>
+                </tr>
+            </table>
+            <img src="images/Anatomy-of-the-eye.jpg" id="eye-anatomy-image" alt="anatomy of eye diagram">
+        </section>
+
+        <section id="page2" class="page">
+            <header class="page-header">
+                <h1>
+                    Color blindness
+                </h1>
+            </header>
+            <p class="colorblindness-paragraph">
+                The human eye has 3 cones that pick up different color wavelengths. <span class="red color"> Red </span>
+                , <span class="green color"> Green </span> and <span class="blue color"> Blue </span> . Each cone is
+                sensitive to different wavelengths of light. When light enters the eye and reaches the retina, these
+                cones respond by detecting how much of each color is present. The cones then send signals through the
+                optic nerve to the brain, which combines the information to create the colors we see.
+            </p>
+            <p class="colorblindness-paragraph">
+                Color blindness occurs when 1 or more of the color cone cells are either absent , not working or detect
+                a different color than it should.<br>
+                The most common type of color blindness is red-green color blindness. Followed up blue-green. Complete
+                color blindness, also known as <i>achromatopsia</i>, is rarer than the other two.
+            </p>
+
+            <div id="achroma">
+                <img src="images/Lex_passport.png">
+                <button id="achroma-btn">
+                    Achromatopsia vision
+                </button>
+            </div>
+        </section>
+        <section id="page3" class="page">
+            <section>
+                <header class="page-header">
+                    <h1>
+                        The form
+                    </h1>
+                </header>
+                <button id="toggle-form">
+                    hide form
+                </button>
+                <form id="website-form">
+                    <table>
+                        <tr>
+                            <td class="form-qn">
+                                <label for="eye-color">What color do you think would look cool on your
+                                    eyes? <br><sub> <i>(click on colored
+                                            square to input) </i> </sub> </label>
+                            </td>
+                            <td class="form-ans">
+                                <input type="color" id="eye-color" name="eye-color" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="form-qn">
+                                <label for="rating">Out of a rating of 5, How useful was this website in
+                                    delivering information about
+                                    the topic ?</label>
+                            </td>
+                            <td class="form-ans">
+                                <input type="number" min="1" max="5" id="rating" name="rating" required
+                                    placeholder="Enter number here">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" id="form-submit">
+                            </td>
+                        </tr>
+                    </table>
+
+                </form>
+            </section>
+            <section>
+                <header class="page-header">
+                    <h1>
+                        Mini-game
+                    </h1>
+                </header>
+
+                <div id="game-container">
+                    <div id="watcher" class="watcher-close"></div>
+                    <h2 id="scoreBox">Score :</h2>
+                    <div id="game-area">
+                        <img id="gummy-eye1" src="images/gummy_eye1.png" alt="gummy eye 1" class="gummy-eye shrink">
+                        <img id="gummy-eye2" src="images/gummy_eye1.png" alt="gummy eye 1" class="gummy-eye shrink">
+                        <img id="gummy-eye3" src="images/gummy_eye2.png" alt="gummy eye 2" class="gummy-eye shrink">
+                    </div>
+                    <button id="toggle-game">Start game</button>
+                </div>
+
+
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer id="website-footer">
+        <hr>
+
+        <img src="images/website-qr-code.svg" id="website-qr-code" title="scan to view on mobile"
+            alt="qr-code for mobile view">
+
+        <p>
+            Created by :<br>
+            Lex Omarion De Guzman <br>
+            241208C <br>
+            Lab 01
+        </p>
+    </footer>
+
 </body>
+
 </html>
